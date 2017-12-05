@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bình luận - Sagri</title>
+    <!-- Bootstrap -->
+    <link href="vendors/css/bootstrap.min.css" rel="stylesheet">
+	<link href="vendors/css/font-awesome.min.css" rel="stylesheet">	
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+  </head>
+  <body>
+	<div class="box-binhluan">
+		<div class="container">
+			<div class="add-comment" id="comment">
+				<h4 class="label"><i class="fa fa-comments"></i>Bình luận</h4>
+				<textarea class="txt" id="txtcomment"></textarea>
+				<div class="comment-footer">
+				<a class="btn" id="create-comment" role="button" data-toggle="modal"  ><span class="ui-button-text" >Gửi bình luận</span></a>
+				</div>
+			</div><!-- ./container -->
+		</div>
+		<!-- Modal -->
+		  <div class="modal fade" id="myModal" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Lỗi</h4>
+		        </div>
+		        <div class="modal-body">
+		          <p>Bạn chưa nhập ý kiến!</p>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn add-comment" data-dismiss="modal">Đóng</button>
+		        </div>
+		      </div>
+		      
+		    </div>
+		  </div>
+		  <!-- Modal -->
+		  <!-- Modal 1 -->
+		  <div class="modal fade" id="myModal1" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Thông tin cá nhân</h4>
+		        </div>
+		        <div class="modal-body">
+		          <p>Vui lòng nhập thông tin của bạn</p>
+		          <label for="">Tên:</label><input type="text"><br>
+		          <label for="">Email:</label><input type="text"><br>
+		          <label for="">Tỉnh, TP:</label>
+		          <select name="" id="">
+		          	<option value="">1</option>
+		          	<option value="">2</option>
+		          	<option value="">3</option>
+		          	<option value="">1</option>
+		          	<option value="">2</option>
+		          	<option value="">3</option>
+		          </select>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn add-comment" data-dismiss="modal">Đóng</button>
+		          <button type="button" class="btn add-comment sent" >Gửi</button>
+		        </div>
+		      </div>
+		      
+		    </div>
+		  </div>
+		  <!-- Modal 1-->
+	</div><!-- ./box-binhluan -->
+	<div id="phanhoi">
+		<div class="container">
+			<h4 class="label">Bạn đọc phản hồi <span id="ccc">(42 nhận xét)</span></h4>
+			<div id="box-comment">
+				<div class="comment-item">
+					<h4 class="name"><i class="fa fa-user"></i>Toàn</h4>
+					<time>Bà Rịa - Vũng Tàu - 02/12/2017</time>
+					<p>Ủng hộ các bác tài</p>
+					<div class="reply-option">
+						<a href="javascript:void(0);"  onclick="Comments.addReply(&quot;comments_item_1036763&quot;)">Trả lời</a>
+						<a href="javascript:void(0);" onclick="" ><i class="fa fa-thumbs-o-up"></i><span>2,792</span> thích</a> <!-- class liked -->
+						<a href="javascript:void(0);"  onclick="">Chia sẻ</a>
+					</div>
+				</div><!-- ./comment-item -->
+				<div class="comment-item">
+					<h4 class="name"><i class="fa fa-user"></i>Toàn</h4>
+					<time>Bà Rịa - Vũng Tàu - 02/12/2017</time>
+					<p>Ủng hộ các bác tài</p>
+					<div class="reply-option">
+						<a href="javascript:void(0);"  onclick="Comments.addReply(&quot;comments_item_1036763&quot;)">Trả lời</a>
+						<a href="javascript:void(0);" onclick="" ><i class="fa fa-thumbs-o-up"></i><span>2,792</span> thích</a> <!-- class liked -->
+						<a href="javascript:void(0);"  onclick="">Chia sẻ</a>
+					</div><!-- ./reply-option -->
+					<div class="reply  comment-item" id="comments_item_1036822">
+						<h4 class="name"><i class="fa fa-user"></i>TRẦN QUANG DINH</h4>
+						<time> - 02/12/2017</time>
+						<p class="Comments-item-Content shortened">Hắn là AI mà dám ngang nhiên mày mày tao tao, hù dọa cánh tài xế? Vô tình hay nói trắng ra, có AI đó thuê để DẰN MẶT NGƯỜI DÂN ? Không loại trừ bất kỳ khả năng nào . Cho nên  phải TRUY XÉT TỚI CÙNG. Dân chúng đang hoang mang : LÀ AI ?! </p>
+						<div class="reply-option">
+							<a href="javascript:void(0);" class="likebtn" onclick="" rel="1036822"><i class="fa fa-thumbs-o-up"></i><span>1,723</span> thích</a>
+							<a href="javascript:void(0);" class="reportbtn" rel="1036822" onclick="">Chia sẻ</a>
+						</div>
+					</div><!-- ./reply -->
+					<div class="reply  comment-item" id="comments_item_1036822">
+						<h4 class="name"><i class="fa fa-user"></i>TRẦN QUANG DINH</h4>
+						<time> - 02/12/2017</time>
+						<p class="Comments-item-Content shortened">Hắn là AI mà dám ngang nhiên mày mày tao tao, hù dọa cánh tài xế? Vô tình hay nói trắng ra, có AI đó thuê để DẰN MẶT NGƯỜI DÂN ? Không loại trừ bất kỳ khả năng nào . Cho nên  phải TRUY XÉT TỚI CÙNG. Dân chúng đang hoang mang : LÀ AI ?! </p>
+						<div class="reply-option">
+							<a href="javascript:void(0);" class="likebtn" onclick="" rel="1036822"><i class="fa fa-thumbs-o-up"></i><span>1,723</span> thích</a>
+							<a href="javascript:void(0);" class="reportbtn" rel="1036822" onclick="">Chia sẻ</a>
+						</div>
+					</div><!-- ./reply -->
+				</div><!-- ./comment-item -->
+				<div class="comment-item">
+					<h4 class="name"><i class="fa fa-user"></i>Toàn</h4>
+					<time>Bà Rịa - Vũng Tàu - 02/12/2017</time>
+					<p>Ủng hộ các bác tài</p>
+					<div class="reply-option">
+						<a href="javascript:void(0);"  onclick="Comments.addReply(&quot;comments_item_1036763&quot;)">Trả lời</a>
+						<a href="javascript:void(0);" onclick="" ><i class="fa fa-thumbs-o-up"></i><span>2,792</span> thích</a> <!-- class liked -->
+						<a href="javascript:void(0);"  onclick="">Chia sẻ</a>
+					</div>
+				</div><!-- ./comment-item -->
+			</div><!-- #/box-comment -->
+		</div><!-- ./container -->
+	</div><!-- ./phanhoi -->
+	<script src="vendors/js/jquery.min.js"></script>	
+  	<script src="vendors/js/bootstrap.min.js"></script>	
+  	<script src="resources/js/script.js"></script>	
+  </body>
+</html>

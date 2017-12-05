@@ -1,0 +1,156 @@
+.box-binhluan .add-comment .fa-comments {
+    color: #ccc;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.box-binhluan .label
+{
+    color: #333;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 0;
+}
+.box-binhluan .txt {
+    border: 1px solid #ddd;
+    height: 56px;
+    padding: 10px;
+    width: 100%;
+    outline: 0;
+    color: #333;
+    margin-top: 8px;
+}
+.add-comment.full .txt {
+    height: 100px;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.add-comment .btn,.modal-footer .btn.add-comment
+{
+    background: #009f4c;
+    color: #fff;
+    float: right;
+    font-size: 11px;
+    padding: 10px 10px 8px;
+    text-transform: uppercase;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.comment-footer{
+    margin-top:8px;
+}
+.comment-footer{display: none;}
+.add-comment.full .comment-footer{
+    display: block;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+/*popup loi*/
+.box-binhluan .modal-header{
+    background: #009f4c; 
+}
+.box-binhluan .modal-header h4, .box-binhluan .modal-header .close{
+    color: #fff;
+    opacity: 1;
+}
+/*popup true*/
+#myModal1 .modal-body label{
+    min-width: 100px;
+    float: left;
+}
+#myModal1 .modal-body input,#myModal1 .modal-body select
+{
+    border: 1px solid #ddd;
+    margin-bottom: 7px;
+    height: 25px;
+    padding: 0 5px;
+    width: 82%;
+    outline: none;
+}
+.btn.sent{
+    margin-right: 10px;
+}
+
+@media(max-width: 610px){
+    #myModal1 .modal-body input,#myModal1 .modal-body select
+    {
+        width: 100%;
+    }
+}
+/*phan hoi*/
+#phanhoi .label
+{
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 0;
+}
+#phanhoi .label span
+{
+    font-size: 1.3rem;
+    text-transform: none;
+    margin-left: 2px;
+}
+#box-comment .comment-item
+{
+    padding: 8px 0;
+}
+#box-comment .comment-item .name
+{
+    float: left;
+    text-transform: capitalize;
+    font-size: 1em;
+    font-weight: bold;
+    margin:3px 0;
+}
+#box-comment .comment-item .fa-user
+{
+    color: #dadada;
+    font-size: 14px;
+    margin-right: 5px;
+    vertical-align: top;
+}
+#box-comment .comment-item time
+{
+    color: #999;
+    font-size: 12px;
+}
+#box-comment .comment-item time:before
+{
+    content: "-";
+    padding: 0 6px;
+}
+#box-comment .comment-item p
+{
+    clear: both;
+    color: #333;
+    display: block;
+    line-height: 18px;
+    margin: 8px 22px;
+}
+#box-comment .comment-item .reply-option {
+    margin-left: 22px;
+}
+#box-comment .comment-item .reply-option a:not(:last-child):after {
+    content: "|";
+    padding: 0 10px;
+    color: #999;
+}
+#box-comment .comment-item .reply-option .fa-thumbs-o-up {
+    margin-right: 5px;
+}
+/*reply*/
+#box-comment .comment-item .reply {
+    padding: 12px 0 0 50px;
+}
